@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>Contact Us</title>
+    <style>
+        .contact-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            background: #6f6f6f;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-details {
+            flex: 1;
+            padding: 2rem;
+            background: #222;
+            color: #fff;
+        }
+
+        .contact-details h2 {
+            color:#a9f01a;
+            margin-bottom: 1rem;
+        }
+
+        .contact-details p {
+            margin: 0.8rem 0;
+            display: flex;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+
+        .contact-details .icon {
+            margin-right: 10px;
+            color:#a9f01a;
+        }
+
+        .contact-form {
+            flex: 2;
+            padding: 2rem;
+            background: #333;
+        }
+
+        .contact-form h2 {
+            color: #a9f01a;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.5rem;
+            background: #444;
+            border: 1px solid #666;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #ccc;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #a9f01a;
+        }
+
+        .form-group-logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            
+        }
+
+        .form-group-logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        .btn {
+            width: 103%;
+            padding: 0.6rem;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #000;
+            background: #a9f01a;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background:#ccc;
+        }
+        
+textarea {
+    width: 100%;               
+    max-width: 100%;          
+    height: 150px;             
+    padding: 12px;             
+    font-size: 1rem;           
+    line-height: 1.5;          
+    border: 2px solid #ccc;    
+    border-radius: 5px;        
+    background-color: #f7f7f7;  
+    color: #333;              
+    transition: border-color 0.3s ease, background-color 0.3s ease;  
+    resize: vertical;          
+  }
+  
+  
+  textarea:focus {
+    outline: none;            
+    border-color: #a9f01a;     
+    background-color: #e6f9e1;  
+  }
+   
+  textarea::placeholder {
+    color: #aaa;               
+    font-style: italic;       
+  }
+  
+   
+   
+  
+
+@media (max-width: 480px) {
+    .contact-container {
+                flex-direction: column;
+                 
+            }
+
+    .contact-details,
+    .contact-form {
+                flex: auto;
+                width: 75%;
+                 
+            }
+
+    .form-group-logo img {
+                width: 70px;
+            }
+            .contact-details p {
+                margin: 0.3rem ;
+                display: flex;
+                text-align: center;
+                font-size: 0.95rem;
+        }
+        .contact-details {
+            flex: auto;
+            padding: 2rem;
+        }
+            
+        }
+        @media (max-width: 768px) {
+            textarea {
+              font-size: 0.9rem;        
+              height: 120px;            
+            }
+          }
+          
+           
+          @media (max-width: 480px) {
+            textarea {
+              font-size: 0.8rem;        
+              height: 100px;            
+            }
+          }
+    </style>
+</head>
+<body>
+<!---Header Start-->
+<header class="container">
+    <div class="page-header">
+        <div class="logo">
+            <a href="index.html"><img src="logo8.png" alt="" height="20%" width="20%" ><h6> My Portfolio</h6></a>
+        </div>
+        <input type="checkbox" id="click">
+
+        <label for="click" class="mainicon">
+            <div class="menu">
+                <i class='bx bx-menu'></i>
+            </div>
+        </label>
+        <ul>
+            <li><a href="index.html"  class="active" style="--navAni:1">Home</a></li>
+            <li><a href="about.html" style="--navAni:2">About</a></li>
+            <li><a href="project.html" style="--navAni:3">Project</a></li>
+            <li><a href="resume.html" style="--navAni:4">Resume</a></li>
+            <li><a href="contact.html" style="--navAni:5">Contact</a></li>
+        </ul>
+        <label class="mode">
+            <input type="checkbox" id="darkModeToggle">
+            <i class='bx bxs-moon'></i>
+        </label>
+    </div>
+</header>
+<!---Header End-->
+<br><br>
+<!---Main Body Start-->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Details Start-->
+            <div class="contact-details">
+                <h2>Contact Me</h2>
+                <p><i class='bx bx-phone icon'></i> Call Me: +1 234 567 890</p>
+                <br><br>
+                <p style="font-size: 16px; color: #333;">
+                    <a href="https://github.com/punamkchavan" target="_blank" style="color: #f3f0f0; text-decoration: none;">
+                        <i class="bx bxl-github" style="margin-right: 5px; font-size: 20px;color: #a9f01a;"></i> 
+                        Visit my GitHub Profile
+                    </a>
+                </p>
+                <br><br>
+                <p style="font-size: 16px; color: #333;">
+                    <a href="https://www.linkedin.com/in/punam-k-chavan" target="_blank" style="color: #eaece8; text-decoration: none;">
+                        <i class="bx bxl-linkedin" style="color: #a9f01a;" ></i> 
+                        Visit my LinkedIn Profile
+                    </a>
+                </p>
+            </div>
+            <!-- Contact Details End-->
+            <!-- Contact Form Start-->
+            <form class="contact-form" action="https://formspree.io/f/your_form_id" method="POST">
+                <h2>Send me a Message</h2>
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group-logo">
+                <textarea  id="message"  name="message"  style="width: 450px; height: 90px;"  placeholder="Write your message here..." required></textarea> 
+                </div><br><br>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <!-- Contact Form End -->
+        </div>
+    </section>
+<!---Main Body End-->
+<!---Js Part Start--->
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+<!---Js Part End--->
+</body>
+</html>

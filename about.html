@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>About Me</title>
+    <style>
+        .content {
+            padding-top: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: calc(30vh - 40px);
+        }
+        .about-card {
+            background: #fcfdfd;
+            box-shadow: 0 4px 8px rgba(16, 17, 16, 0.1);
+            border-radius: 8px;
+            width: 800px;
+            max-width: 90%;
+            padding: 20px;
+            text-align: center;
+        }
+        h3 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #f9f7f7;
+            padding-left: 40%;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #f9f7f7;
+        }
+        h4{
+            font-size: 1.0rem;
+            margin-bottom: 10px;
+            border: #17f1b7;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+             
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 10px 0;
+            color: #8f938d;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7), -1px -1px 3px rgba(255, 255, 255, 0.7);
+        }
+        
+        .skills,
+        .services {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .badge {
+            background-color: #57f933;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #131212;
+        }
+        .profile-picture {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 2px solid #1fc317;
+        }
+        @media (max-width: 768px) {
+            .content {
+                padding-top: 50px;
+            }
+            h2 {
+                font-size: 2rem;
+                text-align: center;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            h3{
+                padding-left: 0%;
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<!---Header Start---->
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="index.html"><img src="logo8.png" alt="" height="20%" width="20%" ><h6> My Portfolio</h6></a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="index.html"  class="active" style="--navAni:1">Home</a></li>
+                <li><a href="about.html" style="--navAni:2">About</a></li>
+                <li><a href="project.html" style="--navAni:3">Project</a></li>
+                <li><a href="resume.html" style="--navAni:4">Resume</a></li>
+                <li><a href="contact.html" style="--navAni:5">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+<!---Header End---->
+<!-- Main Body Start-->
+    <section class="container">
+        <div class="main">
+            <div class="images">
+                <img src="profile.png" alt="" class="img-w">
+                <span class="bg-effect-1"></span>
+                <span class="bg-effect-1"></span>    
+            </div>
+            <div class="detail">
+                <h2 style="color: rgb(243, 244, 244); text-shadow: 2px 2px 4px #000000;">Hello, I'm Punam Chavan</h2>
+                    <p>I'm a web developer specializing in Python and Django. I have successfully completed three 
+                        projects using the Django framework, delivering robust, scalable, and user-friendly applications.</p>
+                    <p>I love transforming ideas into functional and visually appealing websites.
+                        With strong skills in front-end and back-end development, I focus on creating seamless user experiences.</p>
+                <h3>Good at</h3>
+                <div class="skills">
+                    <span class="badge">Python</span>
+                    <span class="badge">Django</span>
+                    <span class="badge">HTML & CSS</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">AWS</span> 
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <h4>"Excited to begin a journey of creating efficient and impactful code".</h4>    
+            </div>        
+        </div>     
+    </section>
+<!-- Main Body End--->
+<!---Js Part Start-->
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+<!---Js Part End-->
+</body>
+</html>
